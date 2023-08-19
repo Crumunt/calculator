@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(100, 100, 233), rgb(250, 121, 121));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  padding: 10px;
+  width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(27, 146, 130);
+}
+
+.screen {
+  border-style: solid;
+  padding: 10px 10px;
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 500;
+  width: 353px;
+  text-align: end;
+  border-width: 2px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  background-color: white;
+}
+
+.bottom-part {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.bottom-part button {
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 400;
+  padding: 20px;
+  width: 80px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  transition: color 0.15s, box-shadow 0.15s;
+}
+
+.bottom-part button:hover {
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.extra-functions {
+  font-weight: 300;
+  display: flex;
+  gap: 20px;
+}
+
+.extra-functions button {
+  background-color: rgb(243, 149, 61);
+}
+
+.extra-functions #clear {
+  flex: 1;
+}
+
+.bottom-part .numpad-row {
+  display: flex;
+  gap: 15px;
+}
+
+.bottom-part .numpad-row button {
+  background-color: rgb(85, 241, 80);
+}
+
+
+.bottom-part .numpad-row #zero {
+  flex: 1;
+}
+
+.bottom-part .function-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-part .function-buttons button {
+  background-color: rgb(255, 233, 106);
+}
+
+.bottom-part .function-buttons .functionButtons.active {
+  color: white;
+}

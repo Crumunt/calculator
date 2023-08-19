@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- Google font Roboto link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,500&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Font awesome 4 link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="screen">0</div>
+    <div class="bottom-part">
+      <div class="left-side">
+        <div class="extra-functions">
+          <button data-key="Backspace" class="removeNumberButtons" id="clear"><span class="fa fa-refresh"></span></button>
+          <button class="removeNumberButtons" id="back"><span class="fa fa-long-arrow-left"></span></button>
+        </div>
+        <div class="numpad-row">
+          <button data-key="7" class="number">7</button>
+          <button data-key="8" class="number">8</button>
+          <button data-key="9" class="number">9</button>
+        </div>
+        <div class="numpad-row">
+          <button data-key="4" class="number">4</button>
+          <button data-key="5" class="number">5</button>
+          <button data-key="6" class="number">6</button>
+        </div>
+        <div class="numpad-row">
+          <button data-key="1" class="number">1</button>
+          <button data-key="2" class="number">2</button>
+          <button data-key="3" class="number">3</button>
+        </div>
+        <div class="numpad-row">
+          <button data-key="0" id="zero" class="number">0</button>
+          <button data-key="." class="number">.</button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="function-buttons">
+          <button class="functionButtons">/</button>
+          <button class="functionButtons">*</button>
+          <button class="functionButtons">-</button>
+          <button class="functionButtons" id="plus">+</button>
+          <button class="functionButtons" id="equals">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
